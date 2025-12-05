@@ -10,38 +10,42 @@
     <script src="main.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <h1>Webseite von Moritz Voelker</h1>
+  <body class="grid-wrapper">
+    <header style="grid-area: header">
+      <h1>Jude Bellingham</h1>
     </header>
 
-    <button onclick="createNewElement()">Neues Element erstellen</button>
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+    <aside style="grid-area: aside;">
+      <img
+        src="https://icdn.football-espana.net/wp-content/uploads/2023/11/Bellingham-1.jpg"
+        alt=""
+      >
+    </aside>
 
+    <main style="grid-area: main">
       <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-
-      <section>
-        <h2>Unterseiten verlinken</h2>
+        <h2>Hobbies</h2>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
+          Hier erfahren sie einige spannende und vielleicht auch überraschende
+          Dinge über die Hobbies von Jude Bellingham.
           <a href="./unterseiten/hobbies.html">Hobbies</a>.
         </p>
       </section>
+      <section>
+        <h2>Karriere</h2>
+        Hier erfahren sie alles über Jude Bellingahams Fussballkarriere und
+        seine Schulische Laufbahn.
+        <a href="./unterseiten/karriere.html">Karriere</a>
+      </section>
+      <section>
+        <h2>Familie</h2>
+        <p>Hier erfahren sie einiges über die Familie von Jude Bellingaham</p>
+        <a href="./unterseiten/familie.html">Familie</a>
+      </section>
     </main>
-    <section>
-      <h2>unterseiten verlinken</h2>
-      <a href="./unterseiten/karriere.html">Karriere</a>
-    </section>
 
-    <footer>Meine Webseite</footer>
+    <footer style="grid-area: footer">
+      Diese Webseite wurde erstellt von Moritz Völker.
+    </footer>
   </body>
 </html>
