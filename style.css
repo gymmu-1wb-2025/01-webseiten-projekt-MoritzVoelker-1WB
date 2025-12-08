@@ -7,6 +7,10 @@
     "header header"
     "aside main"
     "footer footer";
+
+  & > header {
+    grid-area: header;
+  }
 }
 
 header {
@@ -20,7 +24,7 @@ section {
 }
 
 section:nth-child(2n) {
-  background-color: hsl(from aquamarine h s calc(l - 20));
+  background-color: hsl(aquamarine);
 }
 
 aside > img {
