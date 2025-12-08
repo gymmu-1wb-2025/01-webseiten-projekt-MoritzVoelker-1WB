@@ -14,17 +14,17 @@
 }
 
 header {
-  background-color: red;
+  background-color: lightblue;
 }
 
 section {
   margin: 0;
-  background-color: aquamarine;
-  min-height: 60dvh;
+  background-color: mintcream;
+  min-height: 30dvh;
 }
 
 section:nth-child(2n) {
-  background-color: hsl(aquamarine);
+  background-color: hsl(mintcream);
 }
 
 aside > img {
