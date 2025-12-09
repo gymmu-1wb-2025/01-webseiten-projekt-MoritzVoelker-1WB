@@ -5,7 +5,7 @@
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header"
-    "main aside"
+    "aside main"
     "footer footer";
 
   & > header {
@@ -15,6 +15,17 @@
 
 header {
   background-color: lightblue;
+}
+
+.header-container-flex {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-container-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 section {
