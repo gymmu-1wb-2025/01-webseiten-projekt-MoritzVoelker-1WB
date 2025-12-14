@@ -1,3 +1,9 @@
+:root {
+  --primary: mintcream;
+  --secondary: lightblue;
+  --background: white;
+}
+
 .grid-wrapper {
   display: grid;
   height: 82vh;
@@ -7,16 +13,19 @@
     "header header"
     "aside main"
     "footer footer";
+  background-color: var(--background);
 }
 
 header {
-  background-color: lightblue;
+  background-color: var(--secondary);
   grid-area: header;
 }
 
 .header-container-flex {
   display: flex;
   gap: 30px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-container-flex h1 {
@@ -33,17 +42,12 @@ header {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: space-between;
 }
 
 section {
   margin: 0;
-  background-color: mintcream;
+  background-color: var(--primary);
   min-height: 30dvh;
-}
-
-section:nth-child(2n) {
-  background-color: hsl(mintcream);
 }
 
 aside > img {
@@ -55,11 +59,30 @@ aside > img {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.aside-container-grid img {
+.img-aside {
   margin-top: 10px;
   object-fit: contain;
 }
 
 .grid-wrapper h2 {
   margin: 10px;
+}
+
+.grid-wrapper-Subsite {
+  display: grid;
+
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  background-color: var(--background);
+}
+
+.grid-wrapper-Subsite img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
