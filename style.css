@@ -2,6 +2,11 @@
   --primary: mintcream;
   --secondary: lightblue;
   --background: white;
+  --fontColor: black;
+}
+
+body {
+  color: var(--fontColor);
 }
 
 .grid-wrapper {
@@ -85,4 +90,20 @@ aside > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.iconHobby circle {
+  fill: black;
+}
+.iconHobby rect {
+  fill: white;
+}
+.iconKarriere circle {
+  fill: black;
+}
+.iconKarriere line {
+  stroke: white;
+}
+.iconFamilie circle {
+  fill: black;
 }

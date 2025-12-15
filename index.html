@@ -15,9 +15,9 @@
       <h1>Jude Bellingham</h1>
       <nav class="nav-container-flex">
         <a href="./unterseiten/hobbies.html">
-          <svg widh="30" height="30">
-            <circle cx="15" cy="15" r="15" fill="black"></circle>
-            <rect width="20" height="20" x="5" y="5" fill="white"></rect>
+          <svg widh="30" height="30" class="iconHobby">
+            <circle cx="15" cy="15" r="15"></circle>
+            <rect width="20" height="20" x="5" y="5"></rect>
             <text
               x="15"
               y="20"
@@ -31,8 +31,8 @@
           Hobbies</a
         >
         <a href="./unterseiten/karriere.html">
-          <svg widh="30" height="30">
-            <rect width="20" height="20" x="5" y="5" fill="black"></rect>
+          <svg widh="30" height="30" class="iconKarriere">
+            <rect width="20" height="20" x="5" y="5"></rect>
             <text
               x="15"
               y="20"
@@ -42,21 +42,14 @@
             >
               K
             </text>
-            <line
-              x1="5"
-              y1="25"
-              x2="25"
-              y2="25"
-              stroke="white"
-              stroke-width="3"
-            />
-            <line x1="5" y1="5" x2="5" y2="25" stroke="white" stroke-width="3"/>
+            <line x1="5" y1="25" x2="25" y2="25" stroke-width="3"/>
+            <line x1="5" y1="5" x2="5" y2="25" stroke-width="3"/>
           </svg>
           Karriere</a
         >
         <a href="./unterseiten/familie.html">
-          <svg widh="30" height="30">
-            <circle cx="15" cy="15" r="15" fill="black"></circle>
+          <svg widh="30" height="30" class="iconFamilie">
+            <circle cx="15" cy="15" r="15"></circle>
             <text
               x="15"
               y="20"
@@ -114,6 +107,8 @@
     </main>
 
     <footer style="grid-area: footer">
+      <button onclick="changeDunkel()">Dunkel</button>
+      <button onclick="changeHell()">Hell</button>
       Diese Webseite wurde erstellt von Moritz Völker.
     </footer>
   </body>
