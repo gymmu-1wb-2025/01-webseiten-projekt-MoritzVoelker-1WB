@@ -34,7 +34,7 @@ header {
 }
 
 .header-container-flex h1 {
-  flex: 3;
+  flex: 1;
   margin: 10px;
 }
 
@@ -42,7 +42,6 @@ header {
   flex: 1;
   align-items: center;
 }
-
 .nav-container-flex {
   display: flex;
   gap: 20px;
@@ -106,4 +105,22 @@ aside > img {
 }
 .iconFamilie circle {
   fill: black;
+}
+
+@media (max-width: 600px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  .header-container-flex h1 {
+    margin: 0px;
+  }
+  .header-container-flex {
+    gap: 5px;
+    justify-content: center;
+  }
 }
