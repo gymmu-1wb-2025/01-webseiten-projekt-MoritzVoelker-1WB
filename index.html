@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
   </head>
-  <!-- Hier wurde ein ICON erstellt, zu der Unterseite Hobby, welches im NAV liegt.-->
+  <!-- Hier wird ein <body>-Element mit einem CSS-Grid verwendet. Darin liegt ein <header> im Grid-Bereich „header“, der einen Flex-Container darstellt und die Überschrift „Jude Bellingham“ enthält.-->
   <body class="grid-wrapper">
     <header style="grid-area: header" class="header-container-flex">
       <h1>Jude Bellingham</h1>
+      <!-- Hier wird eine Navigationsleiste (<nav>) als Flex-Container erstellt. Der Link führt zum Abschnitt „Hobby“ und enthält ein SVG-Icon, das aus Kreis, Rechteck und dem Buchstaben „H“ besteht.-->
       <nav class="nav-container-flex">
         <a href="#Hobby">
           <svg widh="30" height="30" class="iconHobby">
@@ -30,6 +31,7 @@
           </svg>
           Hobbies</a
         >
+        <!-- Hier handelt es sich um einen Link (<a>), der zum Abschnitt „Karriere“ führt. Innerhalb des Links befindet sich ein SVG-Icon, das ein Rechteck, zwei Linien und den Buchstaben „K“ enthält, um das Symbol darzustellen.-->
         <a href="#Karriere">
           <svg widh="30" height="30" class="iconKarriere">
             <rect width="20" height="20" x="5" y="5"></rect>
@@ -47,6 +49,7 @@
           </svg>
           Karriere</a
         >
+        <!-- Hier wird ein Link (<a>) zum Abschnitt „Familie“ erstellt. Das enthaltene SVG-Icon zeigt einen Kreis mit dem Buchstaben „F“ in der Mitte, als visuelle Kennzeichnung für diesen Bereich.-->
         <a href="#Familie">
           <svg widh="30" height="30" class="iconFamilie">
             <circle cx="15" cy="15" r="15"></circle>
@@ -65,6 +68,7 @@
       </nav>
     </header>
 
+    <!-- Hier wird ein <aside>-Element verwendet, das im Grid-Bereich „aside“ liegt. Innerhalb befinden sich drei Bilder (<img>), die Zusatzinformationen zu Jude Bellingham darstellen.-->
     <aside style="grid-area: aside" class="aside-container-grid">
       <img
         class="img-aside"
@@ -80,7 +84,10 @@
       >
     </aside>
 
-    <main style="grid-area: main">
+   <main style="grid-area: main">
+  </aseiten/karriere
+        </p>
+      </section>
       <section id="Hobbies">
         <h2>Hobbies</h2>
         <p>
@@ -91,18 +98,36 @@
       </section>
       <section id="Karriere">
         <h2>Karriere</h2>
-        <p>
+
           Hier erfahren sie alles über Jude Bellingahams Fussballkarriere und
           seine Schulische Laufbahn.
-          <a href="./unterseiten/karriere.html">Karriere</a>
-        </p>
-      </section>
+          <a href="./unter
       <section id="Familie">
         <h2>Familie</h2>
-        <p>
-          Hier erfahren sie einiges über die Familie von Jude Bellingaham.
+        <p> Hier erfahren sie einiges über die Familie von Jude Bellingaham.</p>
           <a href="./unterseiten/familie.html">Familie</a>
+        <p></p>
+
+      </section>
+      <section id="Hobbies">
+        <h2>Hobbies</h2>
+        <p> Hier erfahren sie einige spannende und vielleicht auch überraschende</p>
+          Dinge über die Hobbies von Jude Bellingham.
+          <a href="./unterseiten/hobbies.html">Hobbies</a>.
         </p>
+      </section>
+      <section id="Karriere">
+        <h2>Karriere</h2>
+
+          Hier erfahren sie alles über Jude Bellinghams Fussballkarriere und
+          seine Schulische Laufbahn.
+          <a href="./unterseiten/karriere.html">Karriere</a>
+
+      <section id="Familie">
+        <h2>Familie</h2>
+        <p> Hier erfahren sie einiges über die Familie von Jude Bellingaham.</p>
+          <a href="./unterseiten/familie.html">Familie</a>
+
       </section>
     </main>
 
