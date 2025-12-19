@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Im <head> werden die Metadaten, der Seitentitel „Hobbies“ und das Stylesheet festgelegt. Im <body> beginnt ein Grid-Layout mit einem Header, der die Überschrift „Seine Hobbies“ und einen Zurück-Link zur Startseite enthält.-->
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width= $device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
-    <header>
-      <h1>Meine Hobbies</h1>
+  <body class="grid-wrapper-Subsite">
+    <header style="grid-area:header" class="header-container-flex">
+      <h1>Seine Hobbies</h1>
+      <a href="../index.html">zurück</a>
     </header>
 
-    <main>
+    <!-- Hier wird der Hauptbereich der Seite mit dem <main>-Tag geöffnet, der im Grid-Layout dem Bereich „main“ zugeordnet ist.-->
+    <main style="grid-area:main">
+      <!-- Hier stehen Informationen zu Jude Bellingahams Hobbies.-->
       <section>
-        <h2>Sport</h2>
-        <p>Diese Sportarten mache ich gerne</p>
+        <h2>Freizeit</h2>
+        <p>Das macht Jude Bellingaham gerne in seiner Freizeit:</p>
         <ul>
-          <li>Volleyball</li>
-          <li>Trailrunning</li>
+          <li>Zeit mit Freunden und Familie verbringen.</li>
+          <li>Golf spielen</li>
+          <li>Viedeospiele spielen</li>
+          <li>
+            Alte Fussballspiele von seinem Idol Zidane als Inspiration schauen
+          </li>
+          <li>
+            Er ist ein großer Basketball Fan und schaut regelmäßig Spiele,
+            offenbar interessiert ihn auch dieser Sport sehr.
+          </li>
         </ul>
       </section>
     </main>
+    <!-- Hier wird ein <aside>-Element im Grid-Bereich „aside“ eingefügt, das ein Bild mit dem Alternativtext „Schulabschluss“ anzeigt, also passend zur ganzen Unterseite.-->
+    <aside style="grid-area:aside">
+      <img
+        src="https://th.bing.com/th/id/OIP.8xVsOjwWBcxUW57XDc4KlQAAAA?w=294&h=196&c=7&r=0&o=7&cb=ucfimg2&dpr=2&pid=1.7&rm=3&ucfimg=1"
+        alt="Schulabschluss"
+      >
+    </aside>
+    <!-- Im footer steht, wer die Webseite erstellt hat.-->
+    <footer style="grid-area: footer">
+      Diese Webseite wurde erstellt von Moritz Völker.
+    </footer>
   </body>
 </html>

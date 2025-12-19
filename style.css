@@ -1,0 +1,146 @@
+/* Hier werden globale CSS-Farbvariablen für die Webseite festgelegt, darunter Hauptfarbe, Sekundärfarbe, Hintergrundfarbe und Schriftfarbe, die überall im CSS wiederverwendet werden können.*/
+:root {
+  --primary: mintcream;
+  --secondary: lightblue;
+  --background: white;
+  --fontColor: black;
+}
+
+/* Hier wird die Textfarbe des gesamten <body>-Elements auf die zuvor definierte CSS-Variable --fontColor gesetzt, also auf Schwarz.*/
+body {
+  color: var(--fontColor);
+}
+
+/* Hier wird ein CSS-Grid für die Klasse .grid-wrapper erstellt, das Header, Aside, Main und Footer in einem 2-Spalten-3-Reihen-Layout anordnet und die Hintergrundfarbe auf die Variable --background gesetzt.*/
+.grid-wrapper {
+  display: grid;
+  height: 82vh;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  background-color: var(--background);
+}
+
+/* Hier wird die Rahmenbreite des Elements h2 innerhalb der Klasse .grid-wrapper definiert. */
+.grid-wrapper h2 {
+  margin: 10px;
+}
+
+/* Hier wird der Header definiert. Die Background Farbe wird anhand der Variable --secondary festgelegt und der Header als grid-area:header festgelegt*/
+header {
+  background-color: var(--secondary);
+  grid-area: header;
+}
+
+/* Hier wird ein CSS-Flex für die Klasse .header-container-flex erstellt. Es wird der Abstand, das Alignment der items und die Ausrichtung des Inhalts festgelegt */
+.header-container-flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hier wird das Element h1 innerhalb der Klasse header-container-flex formatiert. Breite 1 Einheit mit einem Abstand von 10px */
+.header-container-flex h1 {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Hier wird das Element nav innerhalb der Klasse header-container-flex formatiert. Die Breite wird festgelegt und die Ausrichung der items. */
+.header-container-flex nav {
+  flex: 1;
+  align-items: center;
+}
+
+/* Hier wird ein CSS-Flex für die Klasse .nav-container-flex erstellt und der Abstand und die Ausrichtung der items festgelegt. */
+.nav-container-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Hier wird das Element section formatiert. Die Rahmenbreite, die Hintergrundfarbe und die Mindesthöhe werden festgelegt. Die Hintergrundfarbe wird mit der Variable --primary festgelegt */
+section {
+  margin: 0;
+  background-color: var(--primary);
+  min-height: 30dvh;
+}
+
+/* Hier wird festgelegt das die Elemente img innterhalb des aside Bereich eine maximale Breite von 98% haben dürfen und der Abstand nach Oben 10px ist */
+aside > img {
+  margin-top: 10px;
+  max-width: 98%;
+}
+
+/* Hier wird ein CSS-Grid für die Klasse .aside-container-grid erstellt. Es werden 3 Zeilen mit gleicher Höhe definiert. */
+.aside-container-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Hier wird ein CSS-Grid für die Klasse .grid-wrapper-Subsite erstellt, das Header, Main, Aside und Footer in einem 2-Spalten-3-Reihen-Layout anordnet und die Hintergrundfarbe auf die Variable --background gesetzt. Im Gegensatz zur Hauptseite ist bei der Subseite das Main links und das Aside rechts mit 30% des Platzes */
+.grid-wrapper-Subsite {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  background-color: var(--background);
+}
+
+/* Das Element img wird in der Klasse .grid-wrapper-Subsite auf den den gesamten Container verteilt und ein Abstand zum oberen Rand definiert */
+.grid-wrapper-Subsite img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hier wird die Füllfarbe der Kreise innerhalb der Klasse  .iconHobby festgelegt */
+.iconHobby circle {
+  fill: black;
+}
+
+/* Hier wird die Füllfarbe der Rechtecke innerhalb der Klasse  .iconHobby festgelegt */
+.iconHobby rect {
+  fill: white;
+}
+
+/* Hier wird die Füllfarbe der Kreise innerhalb der Klasse  .iconKarriere festgelegt */
+.iconKarriere circle {
+  fill: black;
+}
+
+/* Hier wird die Strichfarbe innerhalb der Klasse .iconKarriere festgelegt */
+.iconKarriere line {
+  stroke: white;
+}
+
+/* Hier wird die Füllfarbe der Kreise innerhalb der Klasse  .iconFamilie festgelegt */
+.iconFamilie circle {
+  fill: black;
+}
+
+/* Hier wird die Seite optimiert, wenn die Ausgabe auf einem schmalen Display (kleiner 600px) gezeigt wird. Dann wird das Aside ausgeblendet und nur noch das Main gezeigt. Zudem wird in der Klasse .header-container-flex und im Element h1 die Rahmenbreite und der Abstand reduziert */
+@media (max-width: 600px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  .header-container-flex h1 {
+    margin: 0px;
+  }
+  .header-container-flex {
+    gap: 5px;
+    justify-content: center;
+  }
+}
